@@ -6,8 +6,8 @@ argument and returns the string representation of the float.
 """
 
 
-def to_str(n: float) ->float:
+def to_str(n: float) -> str:
     """
     return float
     """
-    return n;
+    return str(n)
