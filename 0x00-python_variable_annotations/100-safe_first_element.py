@@ -6,7 +6,6 @@
 from typing import List, Any, Union
 
 
-
 def safe_first_element(lst: List[Any]) -> Union[Any, None]:
     """Return the first element of a list if it exists, else None."""
     if lst:
