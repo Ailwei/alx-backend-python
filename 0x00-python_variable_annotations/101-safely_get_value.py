@@ -1,28 +1,26 @@
 #!/usr/bin/env python3
-"""
-Get a value safely from a dictionary.
+"""Given the parameters and the return values, add type
+annotations to the function
 
-    Parameters:
-        dct (Dict[K, V]): The dictionary to look up.
-        key (K): The key to look up in the dictionary.
-        default (Optional[V], optional): The default value to return 
-        if the key is not found. Defaults to None.
+Hint: look into TypeVar
 
-    Returns:
-        Optional[V]: The value associated with the key if found,
-        or the default value if the key is not found.
+def safely_get_value(dct, key, default = None):
+    if key in dct:
+        return dct[key]
+    else:
+        return default
 """
 
 
-from typing import TypeVar, Dict, Optional
+import typing
 
-K = TypeVar('K')  # Placeholder for dictionary keys
-V = TypeVar('V')  # Placeholder for dictionary values
 
-def safely_get_value(dct: Dict[K, V], key: K, default: Optional[V] = None) -> Optional[V]:
-    """
-    Duck-typed annotation
-    """
+T = typing.TypeVar('T')
+
+
+def safely_get_value(dct: typing.Mapping[typing.Any, T], key: typing.Any,
+                     default: typing.Optional[T] = None) -> typing.Union[T, typing.Any]:
+    """annotations of the function"""
     if key in dct:
         return dct[key]
     else:
