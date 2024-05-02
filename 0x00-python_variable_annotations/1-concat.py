@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-type-annotated concat that maketakes string 1 and str2 
+type-annotated concat that maketakes string 1 and str2
 return concatenated string
 """
 
