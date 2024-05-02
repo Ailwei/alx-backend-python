@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-
 """
  following code with the correct duck-typed annotations
 """
+
+
 from typing import List, Any, Union
 
 
