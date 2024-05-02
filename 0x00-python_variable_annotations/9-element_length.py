@@ -4,8 +4,8 @@ Annotate the below function’s parameters and return
 values with theappropriate types
 """
 
-
 from typing import List, Tuple
+
 
 def element_length(lst: List[str]) -> List[Tuple[str, int]]:
     """
