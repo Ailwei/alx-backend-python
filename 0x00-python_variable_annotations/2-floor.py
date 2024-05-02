@@ -6,8 +6,8 @@ and returns the floor of the float.
 """
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """
     return n as flaot
     """
-    return n
+    return int(n)
