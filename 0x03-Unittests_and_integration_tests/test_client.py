@@ -127,7 +127,10 @@ class TestGithubOrgClient(unittest.TestCase):
     },
 ])
 class TestIntegrationGithubOrgClient(unittest.TestCase):
-    """TestIntegrationGithubOrgClient class to test integration with GithubOrgClient."""
+    """
+    TestIntegrationGithubOrgClient class to test
+    and integrate with GithubOrgClient.
+    """
     @classmethod
     def setUpClass(cls) -> None:
         """Set up class for test."""
