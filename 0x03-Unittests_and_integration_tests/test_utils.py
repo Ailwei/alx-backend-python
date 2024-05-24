@@ -30,11 +30,7 @@ class TestAccessNestedMap(unittest.TestCase):
 
         Args:
             nested_map (dict): Dictionary containing nested mappings.
-            path (tuple): Tuple representing the path to access the nested value.
-            expected_output (any): Expected output after accessing nested value.
-
-        Returns:
-            None
+            path (tuple): Tuple representing the path to access the
         """
         result = access_nested_map(nested_map, path)
         self.assertEqual(result, expected_output)
@@ -50,8 +46,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """Test access_nested_map function to raise exceptions.
 
         Args:
-            nested_map (dict): Dictionary containing nested mappings.
-            path (tuple): Tuple representing the path to access the nested value.
+            nested_map (dict): Dictionary containing nested mappings
             expected_output (exception): Expected exception type.
 
         Returns:
